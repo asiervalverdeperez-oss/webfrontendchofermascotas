@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Phone, Mail, MapPin, Clock, Star, ChevronLeft, ChevronRight, Plane, Heart, Route, MapPinned, Award, Mountain, Waves, Trees, Shield, Users } from "lucide-react";
 
-import heroImage from "@assets/foto_1_replit_1768157729431.png";
+import heroImage from "@assets/image_1768158590550.png";
 import carImage1 from "@assets/image_1768157788767.png";
 import carImage2 from "@assets/image_1768157810869.png";
 import carImage3 from "@assets/image_1768157818886.png";
@@ -59,8 +59,10 @@ function Header() {
 function Hero() {
   return (
     <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      <img src={heroImage} alt="Perro feliz en vehículo" className="absolute inset-0 w-full h-full object-cover object-right" />
-      <div className="absolute inset-0 hero-gradient" />
+      <div className="absolute inset-0">
+        <img src={heroImage} alt="Perro feliz en vehículo" className="w-full h-full object-cover object-center blur-[2px] scale-105" />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-white/30" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-xl animate-fade-in-up">
