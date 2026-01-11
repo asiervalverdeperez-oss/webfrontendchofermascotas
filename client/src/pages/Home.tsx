@@ -58,11 +58,9 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center pt-20">
-      <div className="absolute inset-0 z-0">
-        <img src={heroImage} alt="Perro feliz en vehículo" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 hero-gradient" />
-      </div>
+    <section id="inicio" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+      <img src={heroImage} alt="Perro feliz en vehículo" className="absolute inset-0 w-full h-full object-cover object-right" />
+      <div className="absolute inset-0 hero-gradient" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-xl animate-fade-in-up">
